@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Svenska YKI — Dynamic Practice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div><small>SVENSKA YKI</small><h1>Dynamic practice</h1></div><div id="totalCorrect">0 correct</div></header>
+<main>
+<section class="panel controls">
+  <label>Skill<select id="skill"><option value="mixed">Mixed</option><option value="vocabulary">Vocabulary</option><option value="verbs">Verbs</option><option value="grammar">Grammar</option><option value="sentence">Sentence building</option><option value="speaking">Speaking</option><option value="writing">Writing</option></select></label>
+  <label>Level<select id="level"><option value="all">All</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select></label>
+  <label>Topic<select id="topic"><option value="all">All topics</option></select></label>
+  <button id="reset">Reset progress</button>
+</section>
+<section class="panel"><div class="meta"><span id="skillBadge"></span><span id="levelBadge"></span><span id="counter"></span></div><div class="topic" id="topicText"></div><h2 id="prompt"></h2><div id="body"></div><div id="feedback"></div><div class="actions"><button class="primary" id="check">Check answer</button><button id="next" hidden>Next</button></div></section>
+<section class="panel"><h3>Weak areas</h3><div id="weakness"></div></section>
+</main>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
